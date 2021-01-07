@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article>
+        <div id="heading">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div id="player1" class="score"></div>
+        <div id="player2" class="score"></div>
+        <div id="message"></div>
+
+        <div id="main-board">
+            <div id="01" class="cell" onclick="clicked(0)"></div>
+            <div id="02" class="cell" onclick="clicked(1)"></div>
+            <div id="03" class="cell" onclick="clicked(2)"></div>
+            <div id="04" class="cell" onclick="clicked(3)"></div>
+            <div id="05" class="cell" onclick="clicked(4)"></div>
+            <div id="06" class="cell" onclick="clicked(5)"></div>
+            <div id="07" class="cell" onclick="clicked(6)"></div>
+            <div id="08" class="cell" onclick="clicked(7)"></div>
+            <div id="09" class="cell" onclick="clicked(8)"></div>
+        </div>
+
+        <div id="ply1" class="player">
+            PLAYER X
+        </div>
+        <div id="ply2" class="player">
+            PLAYER O
+        </div>
+        <br><br>
+        <button class="btn" onclick="restart()">RESTART</button>
+    </article>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="main.js"></script>
+
+
+</html>
