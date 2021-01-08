@@ -5,5 +5,5 @@ Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or X
 *Html
 *Css
 *Javascript
-###Link to to the game
+###Link to the game
 https://naveen2008.github.io/Tic-Tac-Toe/.
