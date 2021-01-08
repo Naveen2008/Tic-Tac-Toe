@@ -65,13 +65,13 @@ function findWinner() {
             player2Wins = player2Wins && player2Pattern.includes(winPosition[j]);
         }
         if (player1Wins) {
-            document.getElementById('message').innerHTML = "Player X Wins!!!";
+            document.getElementById('message').innerHTML = "Player X Wins 🏆";
             player1Score++;
             document.getElementById('player1').innerHTML = player1Score;
             return;
         }
         if (player2Wins) {
-            document.getElementById('message').innerHTML = "Player O Wins!!!";
+            document.getElementById('message').innerHTML = "Player O Wins 🏆";
             player2Score++;
             document.getElementById('player2').innerHTML = player2Score;
             return;
