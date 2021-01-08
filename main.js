@@ -5,6 +5,8 @@ let currentPlayer = 1;
 let player1Wins;
 let player2Wins;
 let gameCounter = 0;
+ let player1Score = 0;
+ let player2Score = 0;
 document.getElementById('ply1').style.backgroundColor = '#00917c';
 function clicked(index) {
     if (board[index] != '' || player1Wins || player2Wins) {
@@ -64,12 +66,16 @@ function findWinner() {
         }
         if (player1Wins) {
             document.getElementById('message').innerHTML = "Player X Wins!!!";
-            // document.getElementById('player1').innerHTML = drawScore();
+            player1Score++;
+            document.getElementById('player1').innerHTML = player1Score;
+
             return;
         }
         if (player2Wins) {
             document.getElementById('message').innerHTML = "Player O Wins!!!";
-            // document.getElementById('player1').innerHTML = drawScore();
+            player2Score++;
+            document.getElementById('player1').innerHTML = player2Score;
+
             return;
         }
     }

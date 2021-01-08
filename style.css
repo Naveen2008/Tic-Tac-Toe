@@ -6,13 +6,16 @@ body{
 }
 article{
     width: 700px;
-    height:850px;
+    height:860px;
     background-color: #fde8cd;
     margin: 0 auto;
     border-radius: 10px;
 }
-span{
-    background-color: darkmagenta;
+.x{
+    margin-right:20px;
+}
+.o{
+    margin-left: 60px;
 }
 .score{
     width:150px;
@@ -20,6 +23,8 @@ span{
     border-radius: 10px;
     background-color: #f5f4f4;
     display:inline-block;
+    font-size: 100px;
+    line-height: 1;
     margin:0 0 10px 0;
 }
 #main-board{
