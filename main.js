@@ -32,7 +32,7 @@ function clicked(index) {
         document.getElementById('message').innerHTML = "It's a Draw ¯\_(ツ)_/¯";
     }
     findWinner();
-}
+};
 
 function findWinner() {
     let player1Pattern = [];
@@ -54,7 +54,7 @@ function findWinner() {
         if (board[i] === player2) {
             player2Pattern.push(i);
         }
-    }
+    };
 
     for (let i = 0; i < winPositions.length; i++) {
         player1Wins = true;
@@ -68,19 +68,17 @@ function findWinner() {
             document.getElementById('message').innerHTML = "Player X Wins!!!";
             player1Score++;
             document.getElementById('player1').innerHTML = player1Score;
-
             return;
         }
         if (player2Wins) {
             document.getElementById('message').innerHTML = "Player O Wins!!!";
             player2Score++;
             document.getElementById('player1').innerHTML = player2Score;
-
             return;
         }
     }
 
-}
+};
 function restart() {
     document.getElementById('01').innerHTML = '';
     document.getElementById('02').innerHTML = '';
@@ -97,4 +95,4 @@ function restart() {
     document.getElementById('message').innerHTML = '';
     player1Wins = undefined;
     player2Wins = undefined;
-}
+};
