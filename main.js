@@ -73,7 +73,7 @@ function findWinner() {
         if (player2Wins) {
             document.getElementById('message').innerHTML = "Player O Wins!!!";
             player2Score++;
-            document.getElementById('player1').innerHTML = player2Score;
+            document.getElementById('player2').innerHTML = player2Score;
             return;
         }
     }
